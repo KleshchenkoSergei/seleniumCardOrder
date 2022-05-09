@@ -49,8 +49,7 @@ public class CardOrderTest {
     @Test
     public void shouldPositiveTest() {
         driver.get("http://localhost:9999");
-
-        //CSS selectors
+        
         driver.findElement(By.cssSelector("[type=\"text\"]")).sendKeys("Андрей");
         driver.findElement(By.cssSelector("[type=\"tel\"]")).sendKeys("+79239236655");
         driver.findElement(By.className("checkbox__box")).click();
@@ -63,7 +62,6 @@ public class CardOrderTest {
     public void shouldTestNameLatin() {
         driver.get("http://localhost:9999");
 
-        //CSS selectors
         driver.findElement(By.cssSelector("[type=\"text\"]")).sendKeys("Andrei");
         driver.findElement(By.cssSelector("[type=\"tel\"]")).sendKeys("+79239236655");
         driver.findElement(By.className("checkbox__box")).click();
@@ -76,7 +74,6 @@ public class CardOrderTest {
     public void shouldTestNameNumeric() {
         driver.get("http://localhost:9999");
 
-        //CSS selectors
         driver.findElement(By.cssSelector("[type=\"text\"]")).sendKeys("Андрей222");
         driver.findElement(By.cssSelector("[type=\"tel\"]")).sendKeys("+79239236655");
         driver.findElement(By.className("checkbox__box")).click();
@@ -89,7 +86,6 @@ public class CardOrderTest {
     public void shouldTestNameSpecialSymbol() {
         driver.get("http://localhost:9999");
 
-        //CSS selectors
         driver.findElement(By.cssSelector("[type=\"text\"]")).sendKeys("Андрей!");
         driver.findElement(By.cssSelector("[type=\"tel\"]")).sendKeys("+79239236655");
         driver.findElement(By.className("checkbox__box")).click();
@@ -102,7 +98,6 @@ public class CardOrderTest {
     public void shouldTestPhonePlusLost() {
         driver.get("http://localhost:9999");
 
-        //CSS selectors
         driver.findElement(By.cssSelector("[type=\"text\"]")).sendKeys("Андрей");
         driver.findElement(By.cssSelector("[type=\"tel\"]")).sendKeys("79239236655");
         driver.findElement(By.className("checkbox__box")).click();
@@ -115,7 +110,6 @@ public class CardOrderTest {
     public void shouldTestPhoneNumberLess() {
         driver.get("http://localhost:9999");
 
-        //CSS selectors
         driver.findElement(By.cssSelector("[type=\"text\"]")).sendKeys("Андрей");
         driver.findElement(By.cssSelector("[type=\"tel\"]")).sendKeys("+7923923665");
         driver.findElement(By.className("checkbox__box")).click();
@@ -128,7 +122,6 @@ public class CardOrderTest {
     public void shouldTestPhoneNumberMore() {
         driver.get("http://localhost:9999");
 
-        //CSS selectors
         driver.findElement(By.cssSelector("[type=\"text\"]")).sendKeys("Андрей");
         driver.findElement(By.cssSelector("[type=\"tel\"]")).sendKeys("+792392366550");
         driver.findElement(By.className("checkbox__box")).click();
@@ -141,7 +134,6 @@ public class CardOrderTest {
     public void shouldTestPhoneLetter() {
         driver.get("http://localhost:9999");
 
-        //CSS selectors
         driver.findElement(By.cssSelector("[type=\"text\"]")).sendKeys("Андрей");
         driver.findElement(By.cssSelector("[type=\"tel\"]")).sendKeys("+7923923665q");
         driver.findElement(By.className("checkbox__box")).click();
@@ -154,7 +146,6 @@ public class CardOrderTest {
     public void shouldTestNoAgreement() {
         driver.get("http://localhost:9999");
 
-        //CSS selectors
         driver.findElement(By.cssSelector("[type=\"text\"]")).sendKeys("Андрей");
         driver.findElement(By.cssSelector("[type=\"tel\"]")).sendKeys("+79239236655");
         driver.findElement(By.tagName("button")).click();
